@@ -1,0 +1,42 @@
+<html>
+<head>
+<!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<title> PL3282A Survey </title>
+</head>
+
+
+
+<script>
+    var sites = [
+    'https://goo.gl/forms/qw2ifMRq2BIQep9u2',
+    'https://goo.gl/forms/FiaKq1Go3P59KFQs1',
+    'https://goo.gl/forms/jBQ4KxKQILyxuNEH2',
+    'https://goo.gl/forms/k6xK99nVIqO37VW32',
+    'https://goo.gl/forms/K5EvCVgHVnjuwJ643',
+    'https://goo.gl/forms/GaqIbMknYIKA6PWK2'
+    ];
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
+<body>
+<nav>
+   <div class="nav-wrapper">
+     <a href="#" class="brand-logo center" >PL3287 Research Project</a>
+     <ul id="nav-mobile" class="right hide-on-med-and-down">
+       <!-- <li><a href="#!">PL3287 Survey</a></li> -->
+     </ul>
+   </div>
+ </nav>
+<p style = "margin-left:17% ;margin-top:5%"> Thank you for participating in this research study. Please click on the link provided in the next section to proceed with this study.</p>
+
+<a class="waves-effect waves-light btn" style="margin-left:42%;margin-top:2%" type="button" onClick="onClick()">Click here to proceed</a>
+<p>Clicks: <a id="clicks">0</a></p>
+</body>
+
+</html>
